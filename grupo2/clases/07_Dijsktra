@@ -1,0 +1,66 @@
+//Keke Perdido XDD:
+//https://caramelito69.github.io/KeKe-3D-/
+
+//Diapositivas:
+//https://prezi.com/view/GwIyjlGmgcEnid4Z8jyp/?referral_token=SsOXeUlnB3FN
+
+#include<bits/stdc++.h>
+using namespace std;
+#define INI cin.tie(0)->sync_with_stdio(0);cout.tie(0);
+#define int ll
+#define readi(a) int a;cin>>a;
+#define readi2(a,b) int a,b;cin>>a>>b;
+#define readi3(a,b,c) int a,b,c;cin>>a>>b>>c;
+#define endl '\n'
+#define ii pair<int,int>
+typedef long long ll;
+typedef unsigned long long ull;
+const ll inf=numeric_limits<ll>::max();
+vector<int>dijkstra(int n,vector<vector<ii>>&vec)
+{
+    vector<int>dist(n+1,inf);
+    dist[1]=0;
+    priority_queue<ii>cola;
+    cola.push({0,1});
+    while(!cola.empty())
+    {
+        int ignacio=-cola.top().first;
+        int camilo=cola.top().second;
+        cola.pop();
+        if(ignacio>dist[camilo])continue;
+        for(auto e:vec[camilo])
+        {
+            int aug=e.first;
+            int andres=e.second;
+            if(andres+dist[camilo]<dist[aug])
+            {
+                dist[aug]=andres+dist[camilo];
+                cola.push({-dist[aug],aug});
+            }
+        }
+    }
+}
+void solve()
+{
+    readi2(n,m)
+    vector<vector<ii>>vec(n+1);
+    for(int i=1;i<=m;i++)
+    {
+        readi3(a,b,c)
+        vec[a].push_back({b,c});
+    }
+    vector<int>dist=dijkstra(n,vec);
+    for(int i=1;i<=n;i++)
+        cout<<dist[i]<<' ';
+//    for(int i=0;i<=n;i++)
+//    {
+//        cout<<i<<':';
+//        for(auto e:vec[i])
+//            cout<<e.first<<','<<e.second<<"  ";
+//        cout<<endl;
+//    }
+}
+main()
+{
+    solve();
+}
