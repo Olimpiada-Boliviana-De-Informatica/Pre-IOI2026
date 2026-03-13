@@ -9,6 +9,7 @@ Hacer todo lo posible del AtCoder DP educational contest: [https://atcoder.jp/co
 **Premio:** El que resuelva más problemas, gana una matera de HRT y un juguete misterioso financiado por el Dr. Penguino.
 
 **Regla:** Si la persona que mas problemas resuelve tiene $N$ problemas resueltos, todos los demás deben resolver al menos $N-2$ problemas para no considerarse que se tiene falta durante esta semana.
+**Regla 2:** Si $N < 10$ hay tabla.
 
 ### Tarea extra:
 
