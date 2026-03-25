@@ -10,6 +10,8 @@ Hacer todo lo posible del AtCoder DP educational contest: [https://atcoder.jp/co
 
 **Regla:** Si la persona que mas problemas resuelve tiene $N$ problemas resueltos, todos los demás deben resolver al menos $N-2$ problemas para no considerarse que se tiene falta durante esta semana.
 
+**Regla 2:** Si $N < 10$ hay tabla.
+
 ### Tarea extra:
 
 Investigar en que IOI pasaron los siguientes acontecimientos en el contexto de la delegacion Boliviana:
