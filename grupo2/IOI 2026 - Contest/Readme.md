@@ -12,6 +12,7 @@ Puedes ver la sesión completa, ver las explicaciones o ponerte al día haciendo
 > **▶️ [Ver la Clase I en YouTube](https://youtu.be/ffG3t0iNfo0)**
 >
 > **▶️ [Ver la Clase II en YouTube](https://youtu.be/uEPBOYTy-co)**
+> 
 > *Asegúrate de ajustar la calidad del video a 1080p en la configuración del reproductor para ver todo con máxima claridad.*
 
 ---
